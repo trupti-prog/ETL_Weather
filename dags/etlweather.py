@@ -3,7 +3,6 @@ from airflow.providers.http.hooks.http import HttpHook # type: ignore
 from airflow.providers.postgres.hooks.postgres import PostgresHook # type: ignore
 from airflow.decorators import task # type: ignore
 from airflow.utils.dates import days_ago # type: ignore
-# import requests
 import json
 
 # Latitude and longitude for the desired location (London in this case)
