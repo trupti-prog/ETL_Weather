@@ -2,6 +2,23 @@ ETL_Weather
 ================
 To build ETL Weather Pipeline using AirFlow and Astro.
 
+1) Problem 
+   
+Astro platform manages the entire airflow to schedule the workflow of pipeline which needs to be run daily, weekly, monthly, coz continuously you will be getting the data from all the particular sources(DB, IOT & Paid APIs).
+
+3) Data
+
+The data we're using is from Open-Meteo API.
+
+3) Libraries
+
+airflow
+airflow.providers.http.hooks.http
+airflow.providers.postgres.hooks.postgres
+airflow.decorators
+airflow.utils.dates
+json
+
 Your Astro project contains the following files and folders:
 
 - dags: This folder contains the Python files for your Airflow DAGs. By default, this directory includes one example DAG:
