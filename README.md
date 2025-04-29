@@ -1,6 +1,6 @@
 ETL_Weather
 ================
-ETL Weather Pipeline using AirFlow and Astro.
+To build ETL Weather Pipeline using AirFlow and Astro.
 
 Your Astro project contains the following files and folders:
 
