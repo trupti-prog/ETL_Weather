@@ -19,7 +19,9 @@ The data we're using is from Open-Meteo API.
 5. airflow.utils.dates
 6. json
 
-Your Astro project contains the following files and folders:
+**4) About**
+
+Astro project contains the following files and folders:
 
 - dags: This folder contains the Python files for your Airflow DAGs. By default, this directory includes one example DAG:
     - `example_astronauts`: This DAG shows a simple ETL pipeline example that queries the list of astronauts currently in space from the Open Notify API and prints a statement for each astronaut. The DAG uses the TaskFlow API to define tasks in Python, and dynamic task mapping to dynamically print a statement for each astronaut. For more on how this DAG works, see our [Getting started tutorial](https://www.astronomer.io/docs/learn/get-started-with-airflow).
