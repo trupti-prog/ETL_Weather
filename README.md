@@ -25,7 +25,7 @@ In this project, we will create ETL data pipelines. We will combine all the sour
 
 Astro project contains the following files and folders:
 
-- dags: This folder contains the Python files for Airflow DAGs(DIRECTED ACYCLIC GRAPH). By default, this directory includes one example DAG:
+- `dags`: This folder contains the Python files for Airflow DAGs(DIRECTED ACYCLIC GRAPH). By default, this directory includes one example DAG:
     - `exampledag`: This DAG shows a simple ETL pipeline example that queries the list of astronauts currently in space from the Open Notify API and prints a statement for each astronaut. The DAG uses the TaskFlow API to define tasks in Python, and dynamic task mapping to dynamically print a statement for each astronaut.
     - `etlweather`: Create a folder named ETLWeather, as API we are going to use is from Open-Meteo for 'weather.' We will install the Astro CLI and initialize the astro project pulling flow development files from Astro runtime 12.1.1 and initialize an empty Astro project in this particular folder loc. Here, we are reading some APIs, getting the data and displaying it.
 - `Dockerfile`: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience.
