@@ -21,7 +21,7 @@ The data we're using is from Open-Meteo API.
 
 **4) About**
 
-In this project, we will create ETL data pipelines. We will combine all the sources of data and perform some kind of transformation. The entire data is converted into JSON/ Dataframe and we load this data into some other source(PostgreSQL). Sources of data keeps on getting updated with respect to time. (For example- Today we have some other data. Tomorrow the IOT devices may create more data). Hence, it is important to run this ETL pipeline regularly. 'ASTRO' is a platform called as ASTRONOMER.IO. It manages the entire airflow, because if we want to run Airflow in the form of Dockers and all, astronomer plays a very good role. Let say, will be having an API, we will read the data from API, will do some kind of transformation, will be loading some kind of database, deploy this with Astro and AWS and using some cloud 'ASTRO CLOUD PLATFORM'. We will pull the data from API performing Transformation, then take the data and try to push this into PostgreSQL. We have longitude & latitude, based on that will use the weather app API to get some climatic information about particular place. 
+In this project, we will create ETL data pipelines. We will combine all the sources of data and perform some kind of transformation. The entire data is converted into JSON/ Dataframe and we load this data into some other source(PostgreSQL). Sources of data keeps on getting updated with respect to time. (For example- Today we have some other data. Tomorrow the IOT devices may create more data). Hence, it is important to run this ETL pipeline regularly. 'ASTRO' is a platform called as ASTRONOMER.IO. It manages the entire airflow, because if we want to run Airflow in the form of Dockers and all, astronomer plays a very good role. Let say, will be having an API, we will read the data from API, will do some kind of transformation, will be loading some kind of database, deploy this with Astro and AWS and using some cloud 'ASTRO CLOUD PLATFORM'. We will pull the data from API performing Transformation, then take the data and try to push this into PostgreSQL. We have longitude & latitude, based on that will use the weather app API to get some climatic information about particular place. We are using DBeaver to connect with PostgreSQL DB.
 
 Astro project contains the following files and folders:
 
@@ -36,7 +36,19 @@ Astro project contains the following files and folders:
 - `airflow_settings.yaml`: Use this local-only file to specify Airflow Connections, Variables, and Pools instead of entering them in the Airflow UI as we develop DAGs in this project.
 - `docker_compose.yml`: If we want to run PostgreSQL in local, we need to run it as a container.
 
+Entire DAG Pipeline will display like this, provides entire UI. For Graph, what all things we really need to run in the form of task. 
+
 ![Screenshot (228)](https://github.com/user-attachments/assets/fef2e80f-98f9-4b92-a4e9-34353dd30b5a)
+
+![Screenshot (229)](https://github.com/user-attachments/assets/cc1ccf66-a4cb-4028-afb2-cb892e857bcd)
+
+We need to setup connection for any error occured. 
+
+![Screenshot (232)](https://github.com/user-attachments/assets/cc74c634-9217-4b6f-8978-985e792d1484)
+
+![Screenshot (233)](https://github.com/user-attachments/assets/f5903bde-4444-42e5-9f1e-3a13b62adc46)
+
+![Screenshot (236)](https://github.com/user-attachments/assets/b044bfa0-3059-4ba6-afef-f07cb783b4df)
 
 
 Deploying Project Locally
