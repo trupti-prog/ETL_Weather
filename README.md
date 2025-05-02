@@ -36,6 +36,9 @@ Astro project contains the following files and folders:
 - `airflow_settings.yaml`: Use this local-only file to specify Airflow Connections, Variables, and Pools instead of entering them in the Airflow UI as we develop DAGs in this project.
 - `docker_compose.yml`: If we want to run PostgreSQL in local, we need to run it as a container.
 
+![Screenshot (228)](https://github.com/user-attachments/assets/fef2e80f-98f9-4b92-a4e9-34353dd30b5a)
+
+
 Deploying Project Locally
 ===========================
 
