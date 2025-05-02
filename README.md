@@ -52,4 +52,6 @@ We need to setup connection for any error occured. Connections- postgres_default
 
 ![Screenshot (232)](https://github.com/user-attachments/assets/cc74c634-9217-4b6f-8978-985e792d1484)
 
+![Screenshot (233)](https://github.com/user-attachments/assets/d6e7afae-7543-49d6-9a07-5fed11fccc9c)
+
 To take this into Deployment- Create PostgreSQL in AWS and update endpoint in the connection. It will automatically get saved in DB present in the AWS. 
